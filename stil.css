@@ -1,0 +1,319 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+ 
+html{
+    font-size:62.5%;
+}
+ 
+ 
+body{
+    font-family: 'Nunito Sans', sans-serif;
+}
+ 
+ul{
+    list-style: none;
+}
+ 
+section{
+    padding:100px 0;
+}
+ 
+img{
+    width: 100%;
+    height: auto;
+}
+ 
+.satir{
+    display: flex;
+    width: 80%;
+    margin:auto;
+}
+ 
+.bg-yesil{
+    background-color: #8ebd57;
+}
+ 
+/*SITE*/
+ 
+/*header*/
+ 
+header{
+    min-height: 80vh;/*kaldır*/
+    background: url(gorsel/bg-cimen.png) repeat-x bottom,
+                url(gorsel/bulut-2.png),
+                #1DABB8;
+}
+ 
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1DABB8;
+    padding:2% 10%;
+}
+ 
+.logo h1{
+    color:#fff;
+    font-size:3.2rem;
+}
+ 
+nav ul li{
+    display: inline-block;
+}
+ 
+nav ul li a{
+    display: block;
+    border:dashed 3px #fff;
+    padding:5px 10px;
+    margin:0 10px;
+    font-size:1.8rem;
+    color:#fff;
+    text-decoration: none;
+}
+ 
+nav ul li a:hover{
+    border-color:#D8335B;
+    color:#D8335B;
+}
+ 
+#menu{
+    font-size:3.2rem;
+    color:#fff;
+    display: none;
+}
+ 
+ 
+/*header-icerik*/
+.header-icerik{
+    display: flex;
+    width: 80%;
+    margin:50px auto 0 auto;
+}
+.header-sol,
+.header-sag{
+    flex-basis: 50%;
+}
+ 
+.header-sol{
+    background-color: #25373D;
+    padding:40px;
+}
+ 
+.header-sol h1{
+    color:#fff;
+    font-size:4.8rem;
+    font-weight: 800;
+}
+.header-sol p{
+    color:#fff;
+    font-size:1.8rem;
+    line-height: 150%;
+    font-weight: 200;
+    margin-bottom:20px;
+}
+.header-sol p span{
+    background-color: #FEC606;
+    padding:5px 10px;
+    color:#25373D;
+}
+ 
+header input{
+    display: block;
+    width: 100%;
+    padding:10px 20px;
+    margin-bottom:10px;
+}
+ 
+header input[type=text],
+header input[type=tel]{
+    border:solid 3px #FEC606;
+    outline:none;
+}
+ 
+header input[type=text]:focus,
+header input[type=tel]:focus{
+    background-color: #FEC606;
+}
+ 
+header input[type=text]::placeholder,
+header input[type=tel]::placeholder{
+    color:#FEC606;
+}
+ 
+header input[type=submit]{
+    background-color: #FEC606;
+    color:#25373D;
+    border:none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+ 
+header input[type=submit]:hover{
+    outline:solid 3px #FEC606;
+    background-color: #25373D;
+    color:#FEC606;
+}
+ 
+ 
+.header-sag{
+    background: url(gorsel/hot-air-balloon.png);
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: center center;
+}
+ 
+.galeri .satir{
+    flex-wrap: wrap;
+    width: 70%;
+}
+ 
+.galeri h1,
+.bolum2 h1{
+    font-size:4.8rem;
+    color:#fff;
+    flex:content;
+    text-align: center;
+}
+ 
+.galeri .kart{
+    padding:20px;
+    background-color: #25373D;
+    flex-basis: 30%;
+    margin: calc(10%/6);
+}
+.galeri p{
+    text-align: center;
+    margin-top:20px;
+}
+ 
+.galeri p a{
+    color:#fff;
+    padding:0 10px;
+    font-size:1.8rem;
+}
+ 
+.galeri p a:hover{
+    color:#FEC606;
+}
+ 
+ 
+.bolum2{
+    background: url(gorsel/cimen-2.png) repeat-x,
+                url(gorsel/toprak1.jpg);
+}
+ 
+.bolum2 .satir{
+    justify-content: center;
+}
+.oylar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #8ebd57;
+    margin:10px;
+    padding:30px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;    
+}
+ 
+.oylar img{
+    width: 70%;
+}
+ 
+.oylar p{
+    font-size:1.4rem;
+    color:#fff;
+    font-style: italic;
+}
+.oylar .oy{
+    color:#25373D;
+}
+ 
+footer{
+    background-color: #25373D;
+    padding:100px 0;
+    border-top:2px solid #1d282c;
+}
+ 
+footer .satir{
+    background-color: #1DABB8;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 4px;
+    box-shadow: 0 0 20px #22ccdb;
+}
+ 
+footer h1{
+    background: #fff;
+    padding: 0 20px;
+    color:#1d282c;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 25px;
+    margin-top:-25px;
+    box-shadow: 1px 1px 2px #1d282c;
+}
+ 
+footer .sosyal{
+    margin:50px 0;
+}
+ 
+footer a{
+    display: inline-block;
+    color:#fff;
+    font-size:2.4rem;
+    margin:0 20px;
+    transition: .2s;
+}
+ 
+footer a:hover{
+    transform: rotate(360deg);
+    color:#FEC606;
+}
+ 
+@media only screen and (max-width:768px){
+ 
+    #menu{
+        position:absolute;
+        display: block;
+        top:5%;
+        right: 5%;
+    }
+ 
+    nav{
+        position: relative;
+        flex-direction: column;
+        align-items: stretch;
+    }
+    nav ul{
+        margin-top:20px;
+        background-color: #25373D;
+        border-radius: 4px;
+    }
+    nav ul li{
+        display: block;
+        padding:5px 10px;
+    }
+    nav ul li a{
+        border:none;
+    }
+ 
+    .header-sol{
+        flex-basis: 100%;
+    }
+ 
+    .header-sag{
+        display: none;
+    }
+ 
+    .galeri .kart{
+        flex-basis: 45%;
+        margin: calc(10%/4);
+    }
+ 
+}
